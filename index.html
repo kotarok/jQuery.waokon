@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>waokon sample</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.markTextByRegExp.js"></script>
+<script type="text/javascript" src="jquery.waokon.js"></script>
+<style type="text/css" media="all">
+@import url(waokon.css);
+.hide {
+    display: none;
+}
+</style>
+<script type="text/javascript">
+$(function(){
+    $('.konshoku p, .konshoku h2').waokon();
+})
+</script>
+</head>
+<body>
+
+<a href="#" onclick="$('.mishori,.konshoku').toggleClass('hide');">切り替え</a>
+
+<div class="mishori">
+<h2>和欧文間スペース未処理</h2>
+<p>Webにおける日本語のTypographyにはいろいろな問題がある。そのひとつが和欧混植である。</p>
+<p>「AppleコンピューターのSteve JobsやMicrosoftのBill Gates」の様に社名や人名、プロダクトの名称などで日本語中に欧文が使われることはままある。</p>
+<p>この際問題となるのは分かち書き言語が非分かち書き言語に混じることである。またそもそも日本語は日本語の中にローマン数字を用いたり、記号として単独のアルファベットを用いる。例えばAさん、Bさんなどの人称、300ドルなど物の値段、また記号を用いて$300と書かれることもあるし、400cmとか400㎝とか書かれたりすることもある。さらにこれらが約物に連続するケースもある。</p>
+<p>本文サイズの文字だとあまり顕著な違いを感じない人もいるかも知れないが、見出しサイズだとわかりやすいかもしれない。</p>
+<h2>来月Appleから新しい製品iPadがリリースされます。値段は499ドルです。</h2>
+<!-- /.mishori --></div>
+
+
+<div class="konshoku hide">
+<h2>和欧文間スペース処理済み</h2>
+<p>Webにおける日本語のTypographyにはいろいろな問題がある。そのひとつが和欧混植である。</p>
+<p>「AppleコンピューターのSteve JobsやMicrosoftのBill Gates」の様に社名や人名、プロダクトの名称などで日本語中に欧文が使われることはままある。</p>
+<p>この際問題となるのは分かち書き言語が非分かち書き言語に混じることである。またそもそも日本語は日本語の中にローマン数字を用いたり、記号として単独のアルファベットを用いる。例えばAさん、Bさんなどの人称、300ドルなど物の値段、また記号を用いて$300と書かれることもあるし、400cmとか400㎝とか書かれたりすることもある。さらにこれらが約物に連続するケースもある。</p>
+<p>本文サイズの文字だとあまり顕著な違いを感じない人もいるかも知れないが、見出しサイズだとわかりやすいかもしれない。</p>
+<h2>来月Appleから新しい製品iPadがリリースされます。値段は499ドルです。</h2>
+<!-- /.waokon --></div>
+
+</body>
+</html>

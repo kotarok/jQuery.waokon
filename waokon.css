@@ -1,0 +1,33 @@
+/* --- Japanese setting --- */
+
+body:lang(ja) {
+	font-family: "Droid Serif", "Times New Roman", Georgia, "Hiragino Mincho Pro", serif;
+}
+
+.win :lang(ja) {
+	font-family: Georgia, "Times New Roman", "ＭＳ Ｐ明朝", Meiryo, san-serif;
+}
+
+/* --- waokon --- */
+
+:lang(ja) .waokon {
+	margin: 0 .2em;
+	vertical-align: baseline;
+	color: #222;
+}
+
+:lang(ja) h2 .waokon {
+	color: #333;
+}
+
+:lang(ja) .waokon.shortMargin {
+	margin: 0 .125em;
+}
+
+:lang(ja) .waokon.noLeftMargin {
+	margin-left: 0;
+}
+
+:lang(ja) .waokon.noRightMargin {
+	margin-right: 0;
+}
